@@ -1,0 +1,10 @@
+{
+  "name": "Autosave n8n",
+  "description": "Autosave n8n workflow",
+  "version": "0.8",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_icon": "images/icon.png"
+  }
+}

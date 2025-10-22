@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Autosave n8n</title>
+	<script src="main.js" defer></script>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<h1>Autosave n8n workflow</h1>
+
+	<main>
+		<div class="on-off-wrapper">
+			<label for="input-switch">Turn on/off autosave</label>
+			<input type="checkbox" id="input-switch" />
+		</div>
+		
+		<div class="custom-time-wrapper">
+			<label for="input-custom">Set custom delay</label>
+			<input type="text" id="input-custom" value="10"/>
+			<p>seconds</p>
+		</div>
+	</main>
+	
+	<div class="btn-apply-wrapper">
+		<button id="apply-button">Apply</button>
+	</div>
+	
+	<hr>
+	<footer>
+		<p>Created by: Márton Áron </p>
+		|
+		<a href="https://github.com/Sciencewolf/autosave-n8n" target="_blank">Source code</a>
+	</footer>
+</body>
+</html>
