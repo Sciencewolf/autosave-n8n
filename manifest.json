@@ -1,10 +1,19 @@
 {
-  "name": "Autosave n8n",
-  "description": "Autosave n8n workflow",
-  "version": "0.8",
   "manifest_version": 3,
+  "name": "Autosave n8n",
+  "version": "0.9",
+  "description": "Autosave n8n workflow",
   "action": {
     "default_popup": "popup/index.html",
     "default_icon": "images/icon.png"
-  }
+  },
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.app.n8n.cloud/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": ["https://sciencewolf.app.n8n.cloud/*"]
 }
